@@ -1,0 +1,304 @@
+{
+    "type": "UWG",
+    "#N": 4,
+    "#calc_second_order": true,
+    "#skipvalues": 8,
+    "#warming_days": 120, 
+    "#sensitivity": "Sobol",
+    "_setpointCool": 23,
+	"_volheatROOF": 1000000, 
+	"_volheatWALL": 2780000,
+	"_volheatMass": 1125000,
+	"_thermalcondROOF": 0.105,
+	"_thermalcondWALL": 0.112,
+	"_thermalcondMASS": "@0.102,0.882",
+	"_qlight": 16,
+	"_nocc": 0.03,
+	"_infil": 0.5,
+	"_glazingratio": 0.6,
+	"_uvalue": 2.00,
+	"_shgc": 0.5,
+	"_cop": 3,
+	"_albedoWall": 0.1,
+	"_albedoRoof": 0.1,
+	"_bldcooledPerc": 1,
+	"#LCZ": {
+        "translate": false,
+        "filtering": false,
+        "bld_sf": 55,
+        "perv_sf": 5,
+        "aspectratio": 1.8,
+        "meanHeight": 17.5,
+        "perc_treecover": 0.0
+        },
+    "month": 1,
+    "day": 1,
+    "nday": 334,
+    "dtsim": 300,
+    "dtweather": 3600,
+    "autosize": true,
+    "sensocc": 100,
+    "latfocc": 0.3,
+    "radfocc": 0.2,
+    "radfequip": 0.5,
+    "radflight": 0.7,
+    "h_ubl1": 750,
+    "h_ubl2": 80,
+    "h_ref": 150,
+    "h_temp": 2,
+    "h_wind": 10,
+    "c_circ": 1.2,
+    "c_exch": 0.3,
+    "maxday": 200,
+    "maxnight": 50,
+    "windmin": 1,
+    "h_obs": 0.1,
+    "bldheight": 17.50,
+    "h_mix": 1,
+    "blddensity": 0.55,
+    "vertohor": 1.38,
+    "charlength": 1000,
+    "albroad": 0.05,
+    "droad": 0.5,
+    "sensanth": 100,
+    "zone": "1A",
+    "grasscover": 0.00,
+    "treecover": 0.00,
+    "vegstart": 4,
+    "vegend": 10,
+    "albveg": 0.25,
+    "rurvegcover": 0.9,
+    "latgrss": 0.4,
+    "lattree": 0.6,
+    "schtraffic": [[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.6, 0.8, 0.8, 0.6, 0.6, 0.6, 0.6, 0.6, 0.8, 1, 1, 0.8, 0.6, 0.4, 0.2, 0.2, 0.2], [0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.4, 0.4, 0.6, 0.6, 0.4, 0.2, 0.4, 0.4, 0.6, 0.6, 0.4, 0.4, 0.2, 0.2, 0.2], [0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.4, 0.4, 0.4, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 0.2, 0.2, 0.2, 0.2]],
+    "kroad": 1,
+    "croad": 1600000,
+    "bld": [["midriseapartment", "pre80", "_bldcooledPerc"],
+	["midriseapartment", "pst80", "-bldcooledPerc"]],
+    "shgc": null,
+    "albroof": null,
+    "glzr": null,
+    "vegroof": null,
+    "albwall": null,
+    "flr_h": null,
+    "ref_sch_vector": [{
+            "type": "SchDef",
+            "elec": [[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.5, 0.5, 0.6, 0.6, 0.6, 0.6, 0.5, 0.5, 0.7, 0.7, 0.8, 0.8, 0.8, 0.6, 0.6], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.5, 0.5, 0.6, 0.6, 0.6, 0.6, 0.5, 0.5, 0.7, 0.7, 0.8, 0.8, 0.8, 0.6, 0.6], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.5, 0.5, 0.6, 0.6, 0.6, 0.6, 0.5, 0.5, 0.7, 0.7, 0.8, 0.8, 0.8, 0.6, 0.6]],
+            "gas": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+            "light": [[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.15, 0.15, 0.15, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.15, 0.15], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.15, 0.15, 0.15, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.15, 0.15], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.15, 0.15, 0.15, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.15, 0.15]],
+            "occ": [[1, 1, 1, 1, 1, 1, 0.75, 0.75, 0.75, 0.55, 0.55, 0.55, 0.55, 0.60, 0.60, 0.60, 0.75, 0.75, 0.75, 0.90, 0.90, 0.90, 1, 1], [1, 1, 1, 1, 1, 1, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 1, 1], [1, 1, 1, 1, 1, 1, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 1, 1]],
+            "cool": [["_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool"], ["_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool"], ["_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool", "_setpointCool"]],
+            "heat": [[22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22], [22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22], [22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22]],
+            "swh": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+            "q_elec": 7,
+            "q_gas": 0,
+            "q_light": "_qlight",
+            "n_occ": "_nocc",
+            "vent": 0,
+            "v_swh": 0,
+            "bldtype": "midriseapartment",
+            "builtera": "pre80"
+		},
+        {
+			"type": "SchDef",
+			"elec": [[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.5, 0.5, 0.6, 0.6, 0.6, 0.6, 0.5, 0.5, 0.7, 0.7, 0.8, 0.8, 0.8, 0.6, 0.6], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.5, 0.5, 0.6, 0.6, 0.6, 0.6, 0.5, 0.5, 0.7, 0.7, 0.8, 0.8, 0.8, 0.6, 0.6], [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.7, 0.7, 0.5, 0.5, 0.6, 0.6, 0.6, 0.6, 0.5, 0.5, 0.7, 0.7, 0.8, 0.8, 0.8, 0.6, 0.6]],
+            "gas": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+            "light": [[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.15, 0.15, 0.15, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.15, 0.15], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.15, 0.15, 0.15, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.15, 0.15], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.15, 0.15, 0.15, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.15, 0.15]],
+            "occ": [[1, 1, 1, 1, 1, 1, 0.75, 0.75, 0.75, 0.55, 0.55, 0.55, 0.55, 0.60, 0.60, 0.60, 0.75, 0.75, 0.75, 0.90, 0.90, 0.90, 1, 1], [1, 1, 1, 1, 1, 1, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 1, 1], [1, 1, 1, 1, 1, 1, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 1, 1]],
+            "cool": [[50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50], [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50], [50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50]],
+            "heat": [[-50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50], [-50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50], [-50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50, -50]],
+            "swh": [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+            "q_elec": 7,
+            "q_gas": 0,
+            "q_light": "_qlight",
+            "n_occ": "_nocc",
+            "vent": 0.0002,
+            "v_swh": 0,
+            "bldtype": "midriseapartment",
+            "builtera": "pst80"
+		 }
+    ],
+        "ref_bem_vector": [{
+            "type": "BEMDef",
+            "building": {
+                "type": "Building",
+                "floor_height": 3,
+                "int_heat_night": 1,
+                "int_heat_day": 1,
+                "int_heat_frad": 0.1,
+                "int_heat_flat": 0.1,
+                "infil": "_infil",
+                "vent": 0.0002,
+                "glazing_ratio": "_glazingratio",
+                "u_value": "_uvalue",
+                "shgc": "_shgc",
+                "condtype": "AIR",
+                "cop": "_cop",
+                "coolcap": 100,
+                "heateff": 0.8,
+                "initial_temp": 293
+            },
+            "mass": {
+                "type": "Element",
+				"albedo": 0.2,
+                "emissivity": 0.93,
+                "layer_thickness_lst": [0.15, 0.15],
+                "material_lst": [{
+                        "type": "Material",
+                        "name": "hollow briks",
+                        "thermalcond": "_thermalcondMASS",
+						"volheat": "_volheatMass"
+                    }, {
+                        "type": "Material",
+                        "name": "hollow briks",
+                        "thermalcond": "_thermalcondMASS",
+                        "volheat": "_volheatMass"
+                    }
+                ],
+                "vegcoverage": 0,
+                "t_init": 293,
+                "horizontal": true,
+                "name": "floor"
+            },
+            "wall": {
+                "type": "Element",
+                "albedo": "_albedoWall",
+                "emissivity": 0.93,
+                "layer_thickness_lst": [0.165, 0.165],
+                "material_lst": [{
+                        "type": "Material",
+                        "name": "masonry",
+                        "thermalcond": "_thermalcondWALL",
+                        "volheat": "_volheatWALL"
+                    }, {
+                        "type": "Material",
+                        "name": "masonry",
+                        "thermalcond": "_thermalcondWALL",
+                        "volheat": "_volheatWALL"
+                    }
+                ],
+                "vegcoverage": 0,
+                "t_init": 293,
+                "horizontal": false,
+                "name": "brickwall"
+            },
+            "roof": {
+                "type": "Element",
+				"HBR": false,
+				"to_UCM": 0,
+                "albedo": "_albedoRoof",
+                "emissivity": 0.93,
+                "layer_thickness_lst": [0.175, 0.175],
+                "material_lst": [{
+                        "type": "Material",
+                        "name": "reinforced brick",
+                        "thermalcond": "_thermalcondROOF",
+                        "volheat": "_volheatROOF"
+                    }, {
+                        "type": "Material",
+                        "name": "reinforced brick",
+                        "thermalcond": "_thermalcondROOF",
+                        "volheat": "_volheatROOF"
+                    }
+                ],
+                "vegcoverage": 0,
+                "t_init": 293,
+                "horizontal": true,
+                "name": "roof"
+            },
+            "bldtype": "midriseapartment",
+            "builtera": "pre80"
+			},
+        {
+            "type": "BEMDef",
+            "building": {
+                "type": "Building",
+                "floor_height": 3,
+                "int_heat_night": 1,
+                "int_heat_day": 1,
+                "int_heat_frad": 0.1,
+                "int_heat_flat": 0.1,
+                "infil": "_infil",
+                "vent": 0,
+                "glazing_ratio": "_glazingratio",
+                "u_value": "_uvalue",
+                "shgc": "_shgc",
+                "condtype": "AIR",
+                "cop": "_cop",
+                "coolcap": 100,
+                "heateff": 0.8,
+                "initial_temp": 293
+            },
+            "mass": {
+                "type": "Element",
+				"albedo": 0.2,
+                "emissivity": 0.93,
+                "layer_thickness_lst": [0.15, 0.15],
+                "material_lst": [{
+                        "type": "Material",
+                        "name": "hollow briks",
+                        "thermalcond": "_thermalcondMASS",
+						"volheat": "_volheatMass"
+                    }, {
+                        "type": "Material",
+                        "name": "hollow briks",
+                        "thermalcond": "_thermalcondMASS",
+                        "volheat": "_volheatMass"
+                    }
+                ],
+                "vegcoverage": 0,
+                "t_init": 293,
+                "horizontal": true,
+                "name": "floor"
+            },
+            "wall": {
+                "type": "Element",
+                "albedo": "_albedoWall",
+                "emissivity": 0.93,
+                "layer_thickness_lst": [0.165, 0.165],
+                "material_lst": [{
+                        "type": "Material",
+                        "name": "masonry",
+                        "thermalcond": "_thermalcondWALL",
+                        "volheat": "_volheatWALL"
+                    }, {
+                        "type": "Material",
+                        "name": "masonry",
+                        "thermalcond": "_thermalcondWALL",
+                        "volheat": "_volheatWALL"
+                    }
+                ],
+                "vegcoverage": 0,
+                "t_init": 293,
+                "horizontal": false,
+                "name": "brickwall"
+            },
+            "roof": {
+                "type": "Element",
+				"HBR": false,
+				"to_UCM": 0,
+                "albedo": "_albedoRoof",
+                "emissivity": 0.93,
+                "layer_thickness_lst": [0.175, 0.175],
+                "material_lst": [{
+                        "type": "Material",
+                        "name": "reinforced brick",
+                        "thermalcond": "_thermalcondROOF",
+                        "volheat": "_volheatROOF"
+                    }, {
+                        "type": "Material",
+                        "name": "reinforced brick",
+                        "thermalcond": "_thermalcondROOF",
+                        "volheat": "_volheatROOF"
+                    }
+                ],
+                "vegcoverage": 0,
+                "t_init": 293,
+                "horizontal": true,
+                "name": "roof"
+            },
+            "bldtype": "midriseapartment",
+            "builtera": "pst80"
+        }
+    ]
+}

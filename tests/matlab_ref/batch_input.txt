@@ -1,0 +1,15 @@
+self.uwg.UBL.location,            # relative location within a city (N,NE,E,SE,S,SW,W,NW,C)
+self.uwg.UBL.charLength,          # characteristic length of the urban area (m)
+self.uwg.UBL.perimeter,
+self.uwg.UBL.urbArea,             # horizontal urban area (m2)
+self.uwg.UBL.orthLength,          # length of the side of the urban area orthogonal to wind dir (m)
+self.uwg.UBL.paralLength,         # length of the side of the urban area parallel to wind dir (m)
+self.uwg.UBL.ublTemp,             # urban boundary layer temperature (K)
+self.uwg.UBL.ublTempdx,           # urban boundary layer temperature discretization (K)
+self.uwg.UBL.dayBLHeight,         # daytime mixing height, orig = 700
+self.uwg.UBL.nightBLHeight        # Sing: 80, Bub-Cap: 50, nighttime boundary-layer height (m); orig 80
+
+prefix2delete=self.uwg.UBL.
+prefix2add=obj.
+objectref=UBL
+methodref=init
